@@ -5,30 +5,7 @@
       <meta charset="utf-8">
       <title>Questionnaire</title>
       <link rel = "stylesheet" type = "text/css" href = "style_questionnaire_1.css">
-    	<script>
-    		function submit_func() {
-
-    			var obj = {
-    				table: []
-    			};
-
-
-    			var x = document.getElementById("r1");
-    			if(x.checked == true) {
-    				obj.table.push({id: sexe, value:x.value});
-    			}
-
-
-
-
-
-
-
-    			var json = JSON.stringify(obj);
-    			var fs = require('fs');
-    			fs.writeFile('myjsonfile.json', json, 'utf8', callback);
-    		}
-    	</script>
+    	<script type="text/javascript" src="js.js"></script>
   </head>
 
   <body>
