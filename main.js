@@ -52,7 +52,7 @@ var server = http.createServer(function(req, res) {
     var q = url.parse(req.url, true);
     var qdata = q.query;
     var json = JSON.stringify(qdata);
-    fs.writeFile('myjsonfile.json', json, 'utf8', function(err) { if(err) throw err; });
+    fs.writeFile(qdata.nom + '.json', json, 'utf8', function(err) { if(err) throw err; });
     res.writeHead(200, {'Content-Type': 'text/html'});
     var myReadStream = fs.createReadStream(__dirname + '/page_principale.html', 'utf-8');
     myReadStream.pipe(res);
