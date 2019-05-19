@@ -1,5 +1,6 @@
 var http = require('http');
 var fs = require('fs');
+const url = require('url');
 
 var server = http.createServer(function(req, res) {
   console.log('request was made : ' + req.url);
@@ -47,6 +48,15 @@ var server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/css'});
     var myReadStream = fs.createReadStream(__dirname + '/style_questionnaire_1.css', 'utf-8');
     myReadStream.pipe(res);
+  } else if(req.url == '/script_questionnaire.js') {
+    res.writeHead(200, {'Content-Type': 'text/javascript'});
+    var myReadStream = fs.createReadStream(__dirname + '/script_questionnaire.js', 'utf-8');
+    myReadStream.pipe(res);
+  } else if(req.url.includes('questionnaire_1.html?')) {
+    var q = url.parse(req.url, true);
+    var qdata = q.query;
+    var json = JSON.stringify(qdata);
+    fs.writeFile('myjsonfile.json', json, 'utf8', function(err) { if(err) throw err; });
   }
 
 
@@ -54,23 +64,3 @@ var server = http.createServer(function(req, res) {
 
 server.listen(3000, '127.0.0.1');
 console.log('listening port 3000');
-
-
-/*
-function submit_func() {
-
-  var obj = {
-    table: []
-  };
-
-
-  var x = document.getElementById("r1");
-  if(x.checked == true) {
-    obj.table.push({id: sexe, value:x.value});
-  }
-
-
-  var json = JSON.stringify(obj);
-  fs.writeFile('myjsonfile.json', json, 'utf8', callback);
-}
-*/
