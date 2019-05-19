@@ -14,9 +14,9 @@
     <p>
       <fieldset>
         <legend>Tu t'identifie comme ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title" id="r1" value="H"><label for="r1">M.</label>
-        <input type="radio" required name="title" id="r2" value="F"><label for="r2">Mme.</label>
-  	  <input type="radio" required name="title" id="r3" value="A"><label for="r3">Autre</label>
+        <input type="radio" required name="sexe" id="r1" value="H"><label for="r1">M.</label>
+        <input type="radio" required name="sexe" id="r2" value="F"><label for="r2">Mme.</label>
+  	  <input type="radio" required name="sexe" id="r3" value="A"><label for="r3">Autre</label>
       </fieldset>
     </p>
     <p>
@@ -26,7 +26,7 @@
     </p>
     <p>
       <label for="t1">Votre couleur favorite ?<abbr title="Ce champ est obligatoire">*</abbr></label>
-      <input type="text" id="t1" name="cheveux" list="l1" required
+      <input type="text" id="t1" name="couleur_fav" list="l1" required
              pattern="[Jj]aune|[Oo]range|[Bb]run|[Bb]leu|[Vv]ert|[Rr]ouge|[Rr]ose|[Bb]lanc|[Nn]oir|[Vv]iolet">
       <datalist id="l1">
         <option>Jaune</option>
@@ -68,59 +68,59 @@
 
   	<fieldset>
         <legend>T'es plutôt ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title2" id="r4" value="S"><label for="r1">Sportif(ve)</label>
-        <input type="radio" required name="title2" id="r5" value="Fl"><label for="r2">Flemmard(e)</label>
-  	  <input type="radio" required name="title2" id="r6" value="les deux"><label for="r3">Un peu des deux</label>
+        <input type="radio" required name="type_sport" id="r4" value="S"><label for="r1">Sportif(ve)</label>
+        <input type="radio" required name="type_sport" id="r5" value="Fl"><label for="r2">Flemmard(e)</label>
+  	  <input type="radio" required name="type_sport" id="r6" value="les deux"><label for="r3">Un peu des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>T'es plutôt ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title3" id="r7" value="S"><label for="r1">Soirée pépère</label>
-        <input type="radio" required name="title3" id="r8" value="Fl"><label for="r2">Fêtard(e)</label>
-  	  <input type="radio" required name="title3" id="r9" value="les deux"><label for="r3">Un peu des deux</label>
+        <input type="radio" required name="type_fete" id="r7" value="S"><label for="r1">Soirée pépère</label>
+        <input type="radio" required name="type_fete" id="r8" value="Fl"><label for="r2">Fêtard(e)</label>
+  	  <input type="radio" required name="type_fete" id="r9" value="les deux"><label for="r3">Un peu des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>T'es plutôt ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title4" id="r10" value="S"><label for="r1">Introverti(e)</label>
-        <input type="radio" required name="title4" id="r11" value="Fl"><label for="r2">Extraverti(e)</label>
-  	  <input type="radio" required name="title4" id="r12" value="les deux"><label for="r3">ça dépend de la situation</label>
+        <input type="radio" required name="vertie" id="r10" value="S"><label for="r1">Introverti(e)</label>
+        <input type="radio" required name="vertie" id="r11" value="Fl"><label for="r2">Extraverti(e)</label>
+  	  <input type="radio" required name="vertie" id="r12" value="les deux"><label for="r3">ça dépend de la situation</label>
       </fieldset>
 
   	<fieldset>
         <legend>T'es plutôt ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title5" id="r13" value="S"><label for="r1">Sanguin(e)</label>
-        <input type="radio" required name="title5" id="r14" value="Fl"><label for="r2">Calme</label>
-  	  <input type="radio" required name="title5" id="r15" value="les deux"><label for="r3">Un bon mixe des deux</label>
+        <input type="radio" required name="emotion" id="r13" value="S"><label for="r1">Sanguin(e)</label>
+        <input type="radio" required name="emotion" id="r14" value="Fl"><label for="r2">Calme</label>
+  	  <input type="radio" required name="emotion" id="r15" value="les deux"><label for="r3">Un bon mixe des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>T'es plutôt ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title6" id="r16" value="S"><label for="r1">Dormir</label>
-        <input type="radio" required name="title6" id="r17" value="Fl"><label for="r2">Manger</label>
-  	  <input type="radio" required name="title6" id="r18" value="les deux"><label for="r3">y a des choses plus importantes dans la vie enfin !</label>
+        <input type="radio" required name="activite" id="r16" value="S"><label for="r1">Dormir</label>
+        <input type="radio" required name="activite" id="r17" value="Fl"><label for="r2">Manger</label>
+  	  <input type="radio" required name="activite" id="r18" value="les deux"><label for="r3">y a des choses plus importantes dans la vie enfin !</label>
       </fieldset>
 
     <p>
       <label for="t3">Ecrivez une petite auto-biographie qui apparaîtra sur votre profil</label>
-      <textarea cols="30" rows="10"></textarea>
+      <textarea name="autobio" cols="30" rows="10"></textarea>
     </p>
 
     <fieldset>
         <legend>Tu recherches ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title7" id="r1" value="H"><label for="r1">M.</label>
-        <input type="radio" required name="title7" id="r2" value="F"><label for="r2">Mme.</label>
-  	  <input type="radio" required name="title7" id="r3" value="A"><label for="r3">Autre</label>
+        <input type="radio" required name="r_sexe" id="r1" value="H"><label for="r1">M.</label>
+        <input type="radio" required name="r_sexe" id="r2" value="F"><label for="r2">Mme.</label>
+  	  <input type="radio" required name="r_sexe" id="r3" value="A"><label for="r3">Autre</label>
       </fieldset>
     </p>
     <p>
       <label for="n1">Autour de quel âge ?</label>
-      <input type="number" min="18" max="150" step="1" id="n1" name="age"
+      <input type="number" min="18" max="150" step="1" id="n1" name="r_age"
              pattern="\d+">
     </p>
     <p>
       <label for="t1">Il/Elle doit impérativement aimer quelle couleur ?<abbr title="Ce champ est obligatoire">*</abbr></label>
-      <input type="text" id="t1" name="cheveux" list="l1" required
+      <input type="text" id="t1" name="r_cheveux" list="l1" required
              pattern="[Jj]aune|[Oo]range|[Bb]run|[Bb]leu|[Vv]ert|[Rr]ouge|[Rr]ose|[Bb]lanc|[Nn]oir|[Vv]iolet|[Nn]'importe">
       <datalist id="l1">
         <option>Jaune</option>
@@ -138,7 +138,7 @@
     </p>
     <p>
         <label for="t3">Quelle doit être son régime alimentaire ?<abbr title="Ce champ est obligatoire">*</abbr></label>
-  	  <input type="text" id="t3" name="alimentation" list="l3" required
+  	  <input type="text" id="t3" name="r_alimentation" list="l3" required
   	         pattern="[Vv]égetarien|[Vv]egan|[Cc]arnivore|[Oo]mnivore|[Pp]eut m'importe">
         <datalist id="l3">
   	  <option>Végetarien</option>
@@ -150,7 +150,7 @@
     </p>
     <p>
        <label for="t4">Quelle type de musique doit-il(elle) aimer?<abbr title="Ce champ est obligatoire">*</abbr></label>
-  	  <input type="text" id="t4" name="musique" list="l4" required
+  	  <input type="text" id="t4" name="r_musique" list="l4" required
   	         pattern="[Hh]ip-Hop|[Rr]ap|[Cc]lasique|[Mm]etal|[Rr]eggae|[Vv]ariété Française|[Uu]n peu de tout">
         <datalist id="l4">
   	  <option>Hip-Hop</option>
@@ -164,49 +164,49 @@
 
   	<fieldset>
         <legend>Tu recherches un(e) ?<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title8" id="r4" value="S"><label for="r1">Sportif(ve)</label>
-        <input type="radio" required name="title8" id="r5" value="Fl"><label for="r2">Flemmard(e)</label>
-  	  <input type="radio" required name="title8" id="r6" value="les deux"><label for="r3">Un peu des deux</label>
+        <input type="radio" required name="r_type_sport" id="r4" value="S"><label for="r1">Sportif(ve)</label>
+        <input type="radio" required name="r_type_sport" id="r5" value="Fl"><label for="r2">Flemmard(e)</label>
+  	  <input type="radio" required name="r_type_sport" id="r6" value="les deux"><label for="r3">Un peu des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>Tu recherches un(e)<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title9" id="r7" value="S"><label for="r1">Soirée pépère</label>
-        <input type="radio" required name="title9" id="r8" value="Fl"><label for="r2">Fêtard(e)</label>
-  	  <input type="radio" required name="title9" id="r9" value="les deux"><label for="r3">Un peu des deux</label>
+        <input type="radio" required name="r_type_fete" id="r7" value="S"><label for="r1">Soirée pépère</label>
+        <input type="radio" required name="r_type_fete" id="r8" value="Fl"><label for="r2">Fêtard(e)</label>
+  	  <input type="radio" required name="r_type_fete" id="r9" value="les deux"><label for="r3">Un peu des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>Tu recherches un(e)<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title10" id="r10" value="S"><label for="r1">Introverti(e)</label>
-        <input type="radio" required name="title10" id="r11" value="Fl"><label for="r2">Extraverti(e)</label>
-  	  <input type="radio" required name="title10" id="r12" value="les deux"><label for="r3">ça dépend de la situation</label>
+        <input type="radio" required name="r_vertie" id="r10" value="S"><label for="r1">Introverti(e)</label>
+        <input type="radio" required name="r_vertie" id="r11" value="Fl"><label for="r2">Extraverti(e)</label>
+  	  <input type="radio" required name="r_vertie" id="r12" value="les deux"><label for="r3">ça dépend de la situation</label>
       </fieldset>
 
   	<fieldset>
         <legend>Tu recherches un(e)<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title11" id="r13" value="S"><label for="r1">Sanguin(e)</label>
-        <input type="radio" required name="title11" id="r14" value="Fl"><label for="r2">Calme</label>
-  	  <input type="radio" required name="title11" id="r15" value="les deux"><label for="r3">Un bon mixe des deux</label>
+        <input type="radio" required name="r_emotion" id="r13" value="S"><label for="r1">Sanguin(e)</label>
+        <input type="radio" required name="r_emotion" id="r14" value="Fl"><label for="r2">Calme</label>
+  	  <input type="radio" required name="r_emotion" id="r15" value="les deux"><label for="r3">Un bon mixe des deux</label>
       </fieldset>
 
   	<fieldset>
         <legend>Tu recherches un(e)<abbr title="Ce champ est obligatoire">*</abbr></legend>
-        <input type="radio" required name="title12" id="r16" value="S"><label for="r1">Dormir</label>
-        <input type="radio" required name="title12" id="r17" value="Fl"><label for="r2">Manger</label>
-  	  <input type="radio" required name="title12" id="r18" value="les deux"><label for="r3">y a des choses plus importantes dans la vie enfin !</label>
+        <input type="radio" required name="r_activite" id="r16" value="S"><label for="r1">Dormir</label>
+        <input type="radio" required name="r_activite" id="r17" value="Fl"><label for="r2">Manger</label>
+  	  <input type="radio" required name="r_activite" id="r18" value="les deux"><label for="r3">y a des choses plus importantes dans la vie enfin !</label>
       </fieldset>
 
   <p>
       <label for="t3">décrivez nous ce que vous recherchez. </label>
-      <textarea cols="30" rows="10"></textarea>
+      <textarea name="r_bio" cols="30" rows="10"></textarea>
     </p>
     <p>
 
     <p>
 
 
-  		<p> <button onClick="submit_func()"><a href="page_principale.html">Merci d'avoir répondu au questionnaire</button> </p>
+  		<p> <button type="submit">Merci d'avoir répondu au questionnaire</button> </p>
 
   	<p> <button type="reset" >si jamais vous voulez refaire le questionnaire. </button> </p>
     </p>

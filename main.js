@@ -12,19 +12,15 @@ var server = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     var myReadStream = fs.createReadStream(__dirname + '/creation_dun_compte.html', 'utf-8');
     myReadStream.pipe(res);
-  }  else if(req.url == '/page_de_connexion.html') {
+  } else if(req.url == '/page_de_connexion.html') {
     res.writeHead(200, {'Content-Type': 'text/html'});
     var myReadStream = fs.createReadStream(__dirname + '/page_de_connexion.html', 'utf-8');
     myReadStream.pipe(res);
-  }   else if(req.url == '/page_de_connexion.html') {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    var myReadStream = fs.createReadStream(__dirname + '/page_de_connexion.html', 'utf-8');
-    myReadStream.pipe(res);
-  }   else if(req.url == '/page_principale.html') {
+  } else if(req.url == '/page_principale.html') {
     res.writeHead(200, {'Content-Type': 'text/html'});
     var myReadStream = fs.createReadStream(__dirname + '/page_principale.html', 'utf-8');
     myReadStream.pipe(res);
-  }   else if(req.url == '/questionnaire_1.html') {
+  } else if(req.url == '/questionnaire_1.html') {
     res.writeHead(200, {'Content-Type': 'text/html'});
     var myReadStream = fs.createReadStream(__dirname + '/questionnaire_1.html', 'utf-8');
     myReadStream.pipe(res);
@@ -57,6 +53,9 @@ var server = http.createServer(function(req, res) {
     var qdata = q.query;
     var json = JSON.stringify(qdata);
     fs.writeFile('myjsonfile.json', json, 'utf8', function(err) { if(err) throw err; });
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    var myReadStream = fs.createReadStream(__dirname + '/page_principale.html', 'utf-8');
+    myReadStream.pipe(res);
   }
 
 
